@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Idiomas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h1 class="text-center">Bem-vindo(a) ao Guia de Idiomas</h1>
+    <p class="text-center">Escolha uma opção para começar:</p>
+    <form id="linguaForm" class="text-center">
+      <div class="mb-3">
+        <input type="text" class="form-control" id="nomeUsuario" placeholder="Digite seu nome" required>
+      </div>
+      <button type="button" class="btn btn-primary me-2" onclick="iniciarGramatica()">Dúvida de Gramática</button>
+      <button type="button" class="btn btn-secondary" onclick="iniciarPlano()">Plano de Estudos</button>
+    </form>
+    <div id="resultado" class="mt-4"></div>
+  </div>
+  <script>
+    function iniciarGramatica() {
+      const nome = document.getElementById('nomeUsuario').value;
+      document.getElementById('resultado').innerText = `Olá ${nome}, ainda estamos integrando o suporte para dúvidas de gramática na interface web.`;
+    }
+
+    function iniciarPlano() {
+      const nome = document.getElementById('nomeUsuario').value;
+      document.getElementById('resultado').innerText = `Olá ${nome}, ainda estamos integrando o suporte para o plano de estudos na interface web.`;
+    }
+  </script>
+</body>
+</html>
+
